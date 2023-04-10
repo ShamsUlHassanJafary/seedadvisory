@@ -1,0 +1,167 @@
+[
+  {
+    "_id": "0106e433-e75f-4543-875a-af1025f53afb",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "save crop",
+    "url": "http://localhost:8082/crops",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-09T17:43:18.085Z",
+    "modified": "2023-04-10T09:52:00.751Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Gandum\",\n  \"scientific_name\": \"abc\",\n  \"ideal_temperature\": 40,\n  \"ideal_rainfall\": 70,\n  \"planting_season\": \"summer\",\n  \"harvest_season\": \"winter\"\n\n}\n\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "413975a5-e677-4246-b28b-cac9f157ec12",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "save seed",
+    "url": "http://localhost:8082/api/seeds",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-09T17:50:09.951Z",
+    "modified": "2023-04-10T10:02:03.434Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "\n{\n  \"name\": \" Shahbaz FFC\",\n  \"brand\": \"FFC\",\n  \"Double germination_rate\": 7,\n  \"seed_rate\" : 9,\n  \"maturity_duration\": 4,\n  \"disease_resistance\": \"It has very good resistance\",\n  \"special_features\" : \"jahdd\",\n  \"suitableLocations\": \"Multan,Lahore,Dera Ghazi Khan\",\n  \"suitableSoilTypes\": \"Hard,Soft\",\n  \"crop\": {\n  \"name\": \"Gandum\",\n  \"scientific_name\": \"abc\",\n  \"ideal_temperature\": 40,\n  \"ideal_rainfall\": 70,\n  \"planting_season\": \"summer\",\n  \"harvest_season\": \"winter\"\n  }\n}\n\n\n\n ",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "28b8dd72-85e8-4763-95ff-1c40f8b1977f",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "save soil type",
+    "url": "http://localhost:8082/api/soil-types",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-04-09T18:13:27.023Z",
+    "modified": "2023-04-10T10:13:36.011Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Hard\",\n  \"texture\": \"no texture\",\n  \"ph_range\": \"7\",\n  \"nutrients\": \"full of nutrients\",\n  \"drainage_rate\": \"8\"\n  \n}\n",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "56ea84b5-e9f6-4a33-93dc-8e143e841b87",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "recomendation",
+    "url": "http://localhost:8082/api/seed-recommendations?location=Multan&soilTypeName=zarkhaiz&cropName=Chawal",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-04-09T18:18:28.433Z",
+    "modified": "2023-04-10T07:36:07.596Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "location",
+        "value": "Multan",
+        "isPath": false
+      },
+      {
+        "name": "soilTypeName",
+        "value": "zarkhaiz",
+        "isPath": false
+      },
+      {
+        "name": "cropName",
+        "value": "Chawal",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "5f01b78a-f188-4adb-8b3c-5d2eb1beee32",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "testController",
+    "url": "http://localhost:8082/soiltype/Soft",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-10T08:51:04.144Z",
+    "modified": "2023-04-10T10:13:04.890Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e88dfa61-c845-493f-9546-da54a039d46a",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "testrecomended",
+    "url": "http://localhost:8082/recomended?location=Lahore&soilType=Hard&cropName=Chawal",
+    "method": "GET",
+    "sortNum": 60000,
+    "created": "2023-04-10T09:04:37.852Z",
+    "modified": "2023-04-10T11:11:58.861Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "location",
+        "value": "Lahore",
+        "isPath": false
+      },
+      {
+        "name": "soilType",
+        "value": "Hard",
+        "isPath": false
+      },
+      {
+        "name": "cropName",
+        "value": "Chawal",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "2a12c930-4606-4cd0-9b8c-20a195b8972f",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "get crop by name",
+    "url": "http://localhost:8082/crop?name=Gandum",
+    "method": "GET",
+    "sortNum": 70000,
+    "created": "2023-04-10T10:07:00.509Z",
+    "modified": "2023-04-10T10:07:41.763Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "name",
+        "value": "Gandum",
+        "isPath": false
+      }
+    ],
+    "tests": []
+  },
+  {
+    "_id": "25fc57af-a43c-4b97-932a-8eb620a1f085",
+    "colId": "9c3a5ee1-b424-4f69-a85f-cedafb96c629",
+    "containerId": "",
+    "name": "allseeds",
+    "url": "http://localhost:8082/allseeds",
+    "method": "GET",
+    "sortNum": 80000,
+    "created": "2023-04-10T10:37:04.893Z",
+    "modified": "2023-04-10T10:37:27.526Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
